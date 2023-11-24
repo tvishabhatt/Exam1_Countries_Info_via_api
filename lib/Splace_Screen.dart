@@ -1,6 +1,8 @@
 import 'package:adv_exam1/HomePage.dart';
+import 'package:adv_exam1/ThemeProvider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 
 class Splace_Screen extends StatefulWidget{
   @override
@@ -22,7 +24,9 @@ class Splace_ScreenState extends State<Splace_Screen>{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
+    final themeprovider=Provider.of<ThemeProvider>(context, listen: false);
     return Scaffold(
+
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center,crossAxisAlignment: CrossAxisAlignment.center,
           children: [
